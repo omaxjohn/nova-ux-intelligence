@@ -13,6 +13,8 @@ if skill.is_file():
     check(text.startswith('---\nname: nova-ux-intelligence\ndescription: Use when'),'Invalid discovery frontmatter')
     check(len(text.split())<=1100,'Entrypoint exceeds 1100-word engineering budget')
     check(len(text.encode())<=10000,'Entrypoint exceeds byte budget')
+    for marker in ('## Delivery surface','Chat / advisory','Code / implementation'):
+        check(marker in text,f'Missing delivery mode: {marker}')
     for banned in ('Hello Krabi','Cairo','WhatsApp','navy/gold','/Users/'):
         check(banned.lower() not in text.lower(),f'Project-specific entrypoint: {banned}')
 required=['README.md','LICENSE','CONTRIBUTING.md','.gitignore','.github/workflows/validate.yml','references/domains.md','references/evidence.md','references/quality.md','references/materials.md','operations/diagnose.md','operations/design.md','operations/verify.md','agents/openai.yaml','tests/kernel-contract.json','tests/source/frozen-kernel.md','tests/traceability.json']

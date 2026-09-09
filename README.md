@@ -10,6 +10,13 @@ Nova UX Intelligence is a modular Codex skill for designing, critiquing, redesig
 
 It is not a style generator or a project-specific design system. Liquid Glass is available as a preferred selectable direction and is evaluated for hierarchy, readability, accessibility and performance rather than applied by default.
 
+## Chat and code
+
+- **Chat:** critique screenshots and design ideas, resolve trade-offs, produce specifications and plan validation without claiming checks that were not run.
+- **Code:** inspect the repository and design system, implement justified UI changes, render the affected experience and verify the result.
+
+Both modes use the same Frozen Reasoning Kernel, evidence contract and preservation rules.
+
 ## Install
 
 Copy the repository folder into the Codex user skill directory:
