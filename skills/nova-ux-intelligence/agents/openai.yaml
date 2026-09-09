@@ -1,0 +1,9 @@
+interface:
+  display_name: "nOva UX Intelligence"
+  short_description: "UI/UX judgment for chat and hands-on code"
+  icon_small: "./assets/nova-small.svg"
+  icon_large: "./assets/nova-large.svg"
+  brand_color: "#16A34A"
+  default_prompt: "Use $nova-ux-intelligence in chat or code mode to assess this interface and make the smallest justified improvements."
+policy:
+  allow_implicit_invocation: true

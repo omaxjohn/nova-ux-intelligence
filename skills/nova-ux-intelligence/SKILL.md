@@ -1,6 +1,6 @@
 ---
 name: nova-ux-intelligence
-description: Use when designing, critiquing, redesigning, or verifying a digital interface or user flow, including forms, navigation, responsive layouts, accessibility, design-system decisions, or a requested Liquid Glass direction. Not for unrelated backend work, general research, or image-only artwork.
+description: Use when working in chat or hands-on code to design, critique, implement, redesign, or verify a digital interface or user flow, including screenshots, forms, navigation, responsive layouts, accessibility, design systems, or a requested Liquid Glass direction. Not for unrelated backend work, general research, or image-only artwork.
 ---
 
 # Nova UX Intelligence
@@ -23,6 +23,13 @@ Escalate for discovered risk; complexity of vocabulary alone does not justify de
 - HARDEN, OPTIMIZE, EXTRACT → [verify](operations/verify.md); also read it for delivered UI or runtime signoff.
 
 Load only the selected operation and relevant sections of the [13-domain router](references/domains.md). Load [quality](references/quality.md) for prioritization, critique or cross-dimension trade-offs; [evidence](references/evidence.md) for disputed, numeric or consequential claims; [materials](references/materials.md) when materials are relevant or Liquid Glass is selected. Do not preload the reference library or test archive.
+
+## Delivery surface
+
+- **Chat / advisory:** reason from the prompt, screenshot, design file or supplied evidence. Deliver a critique, decision, specification, alternatives or validation plan at the requested depth. Mark runtime claims unverified when no executable artifact is available.
+- **Code / implementation:** inspect the relevant repository, existing design system and runtime before editing. Implement the smallest justified change, preserve working behavior, render the affected interface and report executed checks with concrete evidence.
+
+Use the same kernel and evidence rules in both modes. A chat answer must remain actionable; a code change must include design judgment rather than mechanical styling.
 
 ## Think in this order
 
