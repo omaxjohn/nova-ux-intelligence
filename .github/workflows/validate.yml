@@ -1,4 +1,4 @@
-name: Validate skill
+name: Validate skill and plugin
 
 on:
   push:
@@ -19,3 +19,5 @@ jobs:
           python-version: "3.12"
       - name: Validate package and frozen contract
         run: python3 tests/check_structure.py
+      - name: Validate ChatGPT plugin package
+        run: python3 tests/check_plugin_package.py
