@@ -1,0 +1,27 @@
+{
+  "name": "nova-ux-intelligence",
+  "version": "1.0.0",
+  "description": "Evidence-led UX/UI design judgment from premise to runtime.",
+  "author": {
+    "name": "omaxjohn"
+  },
+  "homepage": "https://github.com/omaxjohn/nova-ux-intelligence",
+  "repository": "https://github.com/omaxjohn/nova-ux-intelligence",
+  "license": "MIT",
+  "keywords": ["ux", "ui", "accessibility", "design", "conversion", "responsive", "rtl"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Nova UX Intelligence",
+    "shortDescription": "Evidence-led UX/UI audit, design and verification",
+    "longDescription": "Design, critique, redesign and verify digital interfaces with evidence-led reasoning, accessibility, responsive behavior, multilingual/RTL support, conversion judgment and runtime verification discipline.",
+    "developerName": "omaxjohn",
+    "category": "Productivity",
+    "capabilities": ["Read"],
+    "defaultPrompt": [
+      "Use Nova UX Intelligence to audit this interface and prioritize the smallest justified changes.",
+      "Use Nova UX Intelligence to redesign this flow while preserving what already works.",
+      "Use Nova UX Intelligence to verify this mobile UI for accessibility, responsive behavior and RTL risks."
+    ],
+    "brandColor": "#0B1F33"
+  }
+}
