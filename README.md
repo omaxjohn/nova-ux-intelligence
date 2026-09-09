@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/nova-large.svg" width="160" alt="nOva — Nova UX Intelligence">
+</p>
+
 # Nova UX Intelligence
 
 Evidence-led design judgment, from premise to runtime.
