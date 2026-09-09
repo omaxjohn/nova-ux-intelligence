@@ -1,0 +1,6 @@
+interface:
+  display_name: "Nova UX Intelligence"
+  short_description: "Contextual UI decisions with runtime verification"
+  default_prompt: "Use $nova-ux-intelligence to assess this interface and make the smallest justified improvements."
+policy:
+  allow_implicit_invocation: true

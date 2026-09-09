@@ -1,0 +1,74 @@
+{
+  "pipeline": [
+    "SKILL.md"
+  ],
+  "challenge": [
+    "SKILL.md"
+  ],
+  "evidence_hierarchy": [
+    "SKILL.md"
+  ],
+  "recommendation_strength_confidence": [
+    "SKILL.md"
+  ],
+  "epistemic_status": [
+    "SKILL.md"
+  ],
+  "contextual_conflict_engine": [
+    "SKILL.md"
+  ],
+  "preservation": [
+    "SKILL.md"
+  ],
+  "design_system_reuse": [
+    "SKILL.md"
+  ],
+  "quality_vector": [
+    "references/quality.md"
+  ],
+  "quality_ladder": [
+    "references/quality.md"
+  ],
+  "15_doctrines": [
+    "references/quality.md"
+  ],
+  "15_operations": [
+    "SKILL.md",
+    "operations/diagnose.md",
+    "operations/design.md",
+    "operations/verify.md"
+  ],
+  "depth_router": [
+    "SKILL.md"
+  ],
+  "13_domains": [
+    "references/domains.md"
+  ],
+  "material_intelligence": [
+    "references/materials.md"
+  ],
+  "liquid_glass_selectable": [
+    "SKILL.md",
+    "references/materials.md"
+  ],
+  "runtime_contract": [
+    "SKILL.md",
+    "operations/verify.md"
+  ],
+  "uncertainty_contract": [
+    "SKILL.md"
+  ],
+  "informed_conversion": [
+    "SKILL.md"
+  ],
+  "default_bias_detector": [
+    "SKILL.md"
+  ],
+  "18_failure_modes": [
+    "tests/cases.json"
+  ],
+  "dynamic_knowledge_boundary": [
+    "references/domains.md",
+    "tests/kernel-contract.json"
+  ]
+}
