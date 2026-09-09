@@ -10,11 +10,14 @@ For critical flows, apply Typical / Empty / Minimum / Maximum / Invalid / Loadin
 
 - Missing images, prices and reviews; honest unavailable states, no fabricated values.
 - Long and mixed-direction text, narrow/wide viewports, zoom/font scaling and content extremes.
+- Phone and tablet portrait/landscape, iPad split view, safe areas, touch targets, gesture alternatives, hover-independent controls, virtual-keyboard occlusion and interrupted/resumed work when those surfaces apply.
 - Slow/offline/timeout, sold out, session expiry, retry, preserved non-sensitive progress, duplicate actions and reconciled transaction status.
 - Keyboard/focus, semantics, accessible names/roles/values, screen-reader behavior, labels/error association, contrast, reduced motion and relevant input modes.
 - Component/token integrity, loaded assets, device performance and visual craft.
 
 Select cases from the actual risks, not every permutation for every component. Keep critical failures in the release decision; do not report a checklist as completed work.
+
+For remote review on a phone or iPad, keep evidence compact and inspectable: name the artifact and environment, attach or link the relevant render/diff, and separate checks executed on the host from observations made only in mobile Chat. Remote access is a delivery surface; it does not turn an unexecuted check into runtime evidence.
 
 Verification asks whether specified behavior works. Validation asks whether users can achieve the intended outcome. For validation, choose realistic tasks and appropriate user evidence; measure informed completion and downstream consequences. A single AI example is not user validation. Record measured conditions before making performance or conversion claims.
 

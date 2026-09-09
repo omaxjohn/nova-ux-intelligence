@@ -4,6 +4,6 @@ interface:
   icon_small: "./assets/nova-small.svg"
   icon_large: "./assets/nova-large.svg"
   brand_color: "#16A34A"
-  default_prompt: "Use $nova-ux-intelligence in chat or code mode to assess this interface and make the smallest justified improvements."
+  default_prompt: "Use $nova-ux-intelligence in chat or code mode to assess this interface, including phone and iPad behavior, and make the smallest justified improvements."
 policy:
   allow_implicit_invocation: true

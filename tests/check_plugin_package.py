@@ -5,6 +5,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / ".codex-plugin" / "plugin.json"
 MARKETPLACE = ROOT / ".agents" / "plugins" / "marketplace.json"
 BUNDLED = ROOT / "skills" / "nova-ux-intelligence"
+REVIEW_TESTS = ROOT / "submission" / "review-tests.json"
 
 
 def require(condition, message):
@@ -15,7 +16,7 @@ def require(condition, message):
 require(MANIFEST.exists(), "missing .codex-plugin/plugin.json")
 manifest = json.loads(MANIFEST.read_text())
 require(manifest["name"] == "nova-ux-intelligence", "plugin name must be canonical")
-require(manifest["version"] == "1.0.0", "plugin version must be 1.0.0")
+require(manifest["version"] == "1.1.0", "plugin version must be 1.1.0")
 require(manifest["skills"] == "./skills/", "manifest must expose bundled skills")
 require(manifest["interface"]["displayName"] == "nOva UX Intelligence", "display name mismatch")
 require(manifest["interface"]["category"] == "Design", "category mismatch")
@@ -33,6 +34,18 @@ require(entry["source"]["url"] == "https://github.com/omaxjohn/nova-ux-intellige
 require(entry["source"]["path"] == "./", "plugin lives at repository root")
 require(entry["policy"]["installation"] == "AVAILABLE", "plugin must be installable")
 require("products" not in entry["policy"], "plugin must remain available across product surfaces")
+
+for rel in ("MOBILE.md", "PRIVACY.md", "TERMS.md", "SUPPORT.md", "submission/listing.md", "submission/release-notes.md"):
+    require((ROOT / rel).is_file(), f"missing cross-device publication resource: {rel}")
+require(REVIEW_TESTS.is_file(), "missing submission/review-tests.json")
+if REVIEW_TESTS.is_file():
+    review_tests = json.loads(REVIEW_TESTS.read_text())
+    require(len(review_tests.get("positive", [])) >= 5, "OpenAI submission needs at least 5 positive tests")
+    require(len(review_tests.get("negative", [])) >= 3, "OpenAI submission needs at least 3 negative tests")
+
+mobile_contract = (ROOT / "MOBILE.md").read_text() if (ROOT / "MOBILE.md").is_file() else ""
+for marker in ("iPhone", "iPad", "Remote", "public plugin directory"):
+    require(marker in mobile_contract, f"mobile contract missing: {marker}")
 
 required = [
     "SKILL.md",

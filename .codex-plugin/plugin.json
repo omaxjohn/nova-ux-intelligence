@@ -1,6 +1,6 @@
 {
   "name": "nova-ux-intelligence",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Evidence-led UX/UI design judgment from premise to runtime.",
   "author": {
     "name": "nOva",
@@ -9,19 +9,19 @@
   "homepage": "https://github.com/omaxjohn/nova-ux-intelligence",
   "repository": "https://github.com/omaxjohn/nova-ux-intelligence",
   "license": "MIT",
-  "keywords": ["ux", "ui", "accessibility", "design", "conversion", "responsive", "rtl"],
+  "keywords": ["ux", "ui", "accessibility", "design", "conversion", "responsive", "mobile", "tablet", "rtl"],
   "skills": "./skills/",
   "interface": {
     "displayName": "nOva UX Intelligence",
     "shortDescription": "UI/UX judgment for chat and hands-on code",
-    "longDescription": "Use one reasoning kernel for conversational critique and hands-on repository implementation, with accessibility, responsive behavior, multilingual/RTL support, conversion judgment and runtime verification discipline.",
+    "longDescription": "Use one reasoning kernel for conversational critique and hands-on repository implementation, with accessibility, phone and tablet adaptation, multilingual/RTL support, conversion judgment and runtime verification discipline.",
     "developerName": "nOva",
     "category": "Design",
     "capabilities": ["Read", "Write"],
     "defaultPrompt": [
       "Chat: critique this interface and preserve what works.",
       "Code: implement the smallest justified UI changes.",
-      "Verify this UI across accessibility, states and runtime."
+      "Verify this UI across phone, iPad, accessibility, states and runtime."
     ],
     "brandColor": "#16A34A",
     "composerIcon": "./assets/nova-small.svg",

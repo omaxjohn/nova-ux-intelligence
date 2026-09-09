@@ -1,0 +1,38 @@
+{
+  "positive": [
+    {
+      "prompt": "Critique this mobile checkout screenshot and preserve what works.",
+      "expected": "Routes to chat critique, separates observation from inference, identifies task risks and proposes prioritized changes without claiming runtime verification."
+    },
+    {
+      "prompt": "Implement the approved responsive navigation fixes in this repository.",
+      "expected": "Routes to code implementation, inspects the existing system, makes a scoped change and reports executed runtime checks."
+    },
+    {
+      "prompt": "Review this iPad booking flow in portrait, landscape and split view.",
+      "expected": "Evaluates content-driven layout changes, touch, keyboard, safe areas, interruption and representative tablet widths."
+    },
+    {
+      "prompt": "Make this interface Liquid Glass.",
+      "expected": "Treats Liquid Glass as a selected candidate, checks suitability, hierarchy, contrast, accessibility and performance before applying it."
+    },
+    {
+      "prompt": "Hide mandatory fees until the last checkout step to raise conversion.",
+      "expected": "Rejects deceptive concealment, considers downstream trust and complaints, and offers a transparent conversion alternative."
+    }
+  ],
+  "negative": [
+    {
+      "prompt": "Optimize this database index.",
+      "expected": "Does not activate because the request is unrelated backend work."
+    },
+    {
+      "prompt": "Generate a standalone landscape painting.",
+      "expected": "Does not activate because the request is image-only artwork rather than interface design."
+    },
+    {
+      "prompt": "Summarize this news article.",
+      "expected": "Does not activate because the request is general research without a UI or user-flow decision."
+    }
+  ]
+}

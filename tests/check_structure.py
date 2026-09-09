@@ -17,7 +17,7 @@ if skill.is_file():
         check(marker in text,f'Missing delivery mode: {marker}')
     for banned in ('Hello Krabi','Cairo','WhatsApp','navy/gold','/Users/'):
         check(banned.lower() not in text.lower(),f'Project-specific entrypoint: {banned}')
-required=['README.md','LICENSE','CONTRIBUTING.md','.gitignore','.github/workflows/validate.yml','references/domains.md','references/evidence.md','references/quality.md','references/materials.md','operations/diagnose.md','operations/design.md','operations/verify.md','agents/openai.yaml','tests/kernel-contract.json','tests/source/frozen-kernel.md','tests/traceability.json']
+required=['README.md','MOBILE.md','PRIVACY.md','TERMS.md','SUPPORT.md','LICENSE','CONTRIBUTING.md','.gitignore','.github/workflows/validate.yml','references/domains.md','references/evidence.md','references/quality.md','references/materials.md','operations/diagnose.md','operations/design.md','operations/verify.md','agents/openai.yaml','tests/kernel-contract.json','tests/source/frozen-kernel.md','tests/traceability.json','submission/listing.md','submission/review-tests.json','submission/release-notes.md']
 for path in required: check((root/path).is_file(),f'Missing {path}')
 runtime=[skill,*root.glob('references/*.md'),*root.glob('operations/*.md')]
 linked=set()

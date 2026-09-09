@@ -17,6 +17,12 @@ It is not a style generator or a project-specific design system. Liquid Glass is
 
 Both modes use the same Frozen Reasoning Kernel, evidence contract and preservation rules.
 
+## Phone and iPad
+
+The skill is packaged without desktop-only product gating. In ChatGPT on iPhone or iPad, a plugin must first be available to the signed-in account through the shared public plugin directory. The local personal-marketplace install is used by Codex Desktop and CLI; it does not by itself publish the plugin to mobile accounts.
+
+For immediate remote code work, ChatGPT Remote can connect the mobile app to a signed-in Mac host and continue Codex tasks with that host's projects, files, permissions, plugins and local tools. See [mobile and remote setup](MOBILE.md).
+
 ## Install
 
 Copy the repository folder into the Codex user skill directory:
@@ -44,6 +50,7 @@ operations/              Diagnose, design and verify workflows
 references/              Routed domain, evidence and material knowledge
 tests/                   Frozen contract and behavioral regression suite
 agents/openai.yaml       Codex display metadata and invocation policy
+submission/              Review-ready public listing materials and tests
 ```
 
 `SKILL.md` contains how to think. References contain knowledge loaded only when relevant. Existing design systems contain prior decisions. Runtime behavior represents what users actually experience.
