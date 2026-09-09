@@ -20,5 +20,6 @@
   <circle cx="512" cy="470" r="400" fill="url(#glow)"/>
   <circle cx="512" cy="512" r="352" fill="none" stroke="url(#nova)" stroke-width="12" opacity=".7"/>
   <circle cx="780" cy="286" r="28" fill="#D96CFF"/>
-  <text x="512" y="582" fill="#FFFFFF" font-family="Inter, SF Pro Display, Arial, sans-serif" font-size="252" font-weight="750" letter-spacing="-15" text-anchor="middle">nOva</text>
+  <text x="444" y="582" fill="#FFFFFF" font-family="Inter, SF Pro Display, Arial, sans-serif" font-size="252" font-weight="750" letter-spacing="-15" text-anchor="middle">nOv</text>
+  <path d="M680 578 744 450 808 578" fill="none" stroke="#FFFFFF" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
