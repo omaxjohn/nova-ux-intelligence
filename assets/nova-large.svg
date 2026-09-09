@@ -1,25 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title description">
   <title id="title">nOva</title>
   <desc id="description">Nova UX Intelligence brand icon</desc>
-  <defs>
-    <linearGradient id="surface" x1="116" y1="64" x2="916" y2="960" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#121A33"/>
-      <stop offset="1" stop-color="#070A13"/>
-    </linearGradient>
-    <linearGradient id="nova" x1="238" y1="218" x2="796" y2="816" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#7164FF"/>
-      <stop offset=".52" stop-color="#9B51F5"/>
-      <stop offset="1" stop-color="#D24CE8"/>
-    </linearGradient>
-    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(512 470) rotate(90) scale(400)">
-      <stop stop-color="#9A60FF" stop-opacity=".34"/>
-      <stop offset="1" stop-color="#9A60FF" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
-  <rect width="1024" height="1024" rx="224" fill="url(#surface)"/>
-  <circle cx="512" cy="470" r="400" fill="url(#glow)"/>
-  <circle cx="512" cy="512" r="352" fill="none" stroke="url(#nova)" stroke-width="12" opacity=".7"/>
-  <circle cx="780" cy="286" r="28" fill="#D96CFF"/>
-  <text x="444" y="582" fill="#FFFFFF" font-family="Inter, SF Pro Display, Arial, sans-serif" font-size="252" font-weight="750" letter-spacing="-15" text-anchor="middle">nOv</text>
-  <path d="M680 578 744 450 808 578" fill="none" stroke="#FFFFFF" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="444" y="582" fill="#16A34A" font-family="Inter, SF Pro Display, Arial, sans-serif" font-size="252" font-weight="750" letter-spacing="-15" text-anchor="middle">nOv</text>
+  <path d="M680 578 744 450 808 578" fill="none" stroke="#16A34A" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
