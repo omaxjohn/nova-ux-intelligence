@@ -6,10 +6,7 @@ Inspect the supplied artifact and relevant implementation before conclusions. Re
 
 Use an issue record: observation/location → task consequence → evidence/status → problem type → severity/confidence → smallest response → verification needed. Missing artifacts mean missing observations, not permission to invent critique. Use [quality](../references/quality.md) to prioritize.
 
-For conflicting sources, the response has two required parts in this order:
-
-1. `Applicability — method/validity: ... | population: ... | task/context: ... | recency: ... | conclusion/confidence: ...` Write `unknown` for every missing value.
-2. The provisional decision and the evidence needed to resolve it.
+For conflicting sources, use the required response contract in [evidence](../references/evidence.md).
 
 For AUDIT, cover the requested scope and retain a complete findings artifact when needed; present a bounded implementation queue. CRITIQUE may conclude KEEP or no redesign. ANALYZE may conclude that information architecture or content, rather than styling, causes the issue.
 
